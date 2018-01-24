@@ -71,6 +71,7 @@ public class Utility {
                     country.setCountryName(countryObject.getString("name"));
                     country.setWeatherId(countryObject.getString("weather_id"));
                     country.setCityId(cityId);
+                    country.save();
                 }
                 return true;
             } catch (JSONException e) {
